@@ -27,127 +27,129 @@
 <body class="bg-bgsoft text-gray-800">
 
 <!-- HEADER -->
-<header class="bg-white/80 backdrop-blur shadow-sm sticky top-0 z-50">
+<header class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <div class="text-xl font-bold text-primary">Om Food Products</div>
-    <nav class="space-x-6 hidden md:block">
+    <div class="text-lg md:text-xl font-bold text-primary">Om Food Products</div>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+
+    <nav class="hidden md:flex space-x-6">
       <a href="#" class="hover:text-primary">Home</a>
       <a href="#products" class="hover:text-primary">Products</a>
       <a href="#about" class="hover:text-primary">About</a>
       <a href="#contact" class="hover:text-primary">Contact</a>
     </nav>
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden flex flex-col px-4 pb-4 space-y-3 bg-white">
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
 
 <!-- HERO -->
-<section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center py-16 px-4">
-  <div data-aos="fade-right">
-    <h1 class="text-5xl font-bold text-primary mb-4">Pure & Fresh
-      <span class="text-secondary">Wheat Products</span>
+<section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center py-10 px-4">
+  <div class="text-center md:text-left">
+    <h1 class="text-3xl md:text-5xl font-bold text-primary mb-4">
+      Pure & Fresh <span class="text-secondary">Wheat Products</span>
     </h1>
-    <p class="mb-6 text-gray-600">High-quality packaged atta with trusted processing and hygiene standards. Built for families, retailers, and bulk buyers.</p>
-    <div class="space-x-4">
-      <a href="#products" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition">Explore Products</a>
-      <a href="#contact" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition">Contact Us</a>
+    <p class="mb-6 text-gray-600 text-sm md:text-base">
+      High-quality packaged atta with trusted processing and hygiene standards.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-3">
+      <a href="#products" class="bg-primary text-white px-6 py-3 rounded-lg text-center">Explore Products</a>
+      <a href="#contact" class="border border-primary text-primary px-6 py-3 rounded-lg text-center">Contact Us</a>
     </div>
   </div>
-  <div data-aos="fade-left">
-    <img src="rasoi.jpg" alt="Fresh wheat products in a bowl" class="rounded-2xl shadow-lg" />
+
+  <div>
+    <img src="rasoi.jpg" class="rounded-2xl shadow-lg w-full" />
   </div>
 </section>
 
 <!-- FEATURES -->
-<section class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 px-4 py-12">
-  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+<section class="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 py-10">
+  <div class="bg-white p-5 rounded-2xl shadow">
     <h3 class="font-semibold text-primary mb-2">Premium Quality</h3>
-    <p class="text-sm text-gray-600">Finest grains selected and processed with care.</p>
+    <p class="text-sm text-gray-600">Finest grains selected and processed.</p>
   </div>
-  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+  <div class="bg-white p-5 rounded-2xl shadow">
     <h3 class="font-semibold text-primary mb-2">Lab Tested</h3>
-    <p class="text-sm text-gray-600">Strict quality control and certified safety standards.</p>
+    <p class="text-sm text-gray-600">Certified safety standards.</p>
   </div>
-  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+  <div class="bg-white p-5 rounded-2xl shadow">
     <h3 class="font-semibold text-primary mb-2">Reliable Supply</h3>
-    <p class="text-sm text-gray-600">Consistent availability for retailers and distributors.</p>
+    <p class="text-sm text-gray-600">Consistent availability.</p>
   </div>
 </section>
 
 <!-- PRODUCTS -->
-<section id="products" class="max-w-7xl mx-auto px-4 py-12">
-  <h2 class="text-3xl font-bold text-primary mb-8">Our Products</h2>
-  <div class="grid md:grid-cols-3 gap-6">
+<section id="products" class="max-w-7xl mx-auto px-4 py-10">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Our Products</h2>
 
-    <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
-      <img src="rasoiatta.jpg" alt="Rasoi Chakki Fresh Atta" class="rounded mb-4" />
-      <h3 class="font-semibold text-lg">Rasoi Chakki Fresh Atta</h3>
-      <p class="text-sm text-gray-600">100% Whole Wheat • 5Kg | 10Kg</p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="bg-white p-4 rounded-2xl shadow">
+      <img src="rasoiatta.jpg" class="rounded mb-3 w-full" />
+      <h3 class="font-semibold">Rasoi Chakki Fresh Atta</h3>
     </div>
 
-    <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
-      <img src="newasthabhog.jpg" alt="Premium Quality Atta" class="rounded mb-4" />
-      <h3 class="font-semibold text-lg">Premium Quality Atta</h3>
-      <p class="text-sm text-gray-600">5Kg | 10Kg | 50Kg</p>
+    <div class="bg-white p-4 rounded-2xl shadow">
+      <img src="newasthabhog.jpg" class="rounded mb-3 w-full" />
+      <h3 class="font-semibold">Premium Quality Atta</h3>
     </div>
-
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="bg-white py-12">
-  <div class="max-w-5xl mx-auto text-center px-4">
-    <h2 class="text-3xl font-bold text-primary mb-4">About Us</h2>
-    <p class="text-gray-600">Om Food Products delivers premium packaged wheat products with advanced manufacturing, hygiene, and traceability systems ensuring top-notch quality.</p>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="bg-primary text-white text-center py-12">
-  <h2 class="text-3xl font-bold mb-4">Looking for Bulk Orders?</h2>
-  <p class="mb-6">We supply to retailers, wholesalers, and distributors.</p>
-  <a href="#contact" class="bg-accent px-6 py-3 rounded-lg hover:scale-105 transition">Get in Touch</a>
+<section id="about" class="bg-white py-10 px-4 text-center">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">About Us</h2>
+  <p class="text-gray-600 text-sm md:text-base">
+    Om Food Products delivers premium packaged wheat products with strict quality standards.
+  </p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="max-w-5xl mx-auto px-4 py-12">
-     <h2 class="text-3xl font-bold text-primary mb-6">Contact Us</h2>
-  <form class="space-y-4">
-    <input class="w-full p-3 border rounded-lg" placeholder="Name" />
-    <input class="w-full p-3 border rounded-lg" placeholder="Email" />
-    <textarea class="w-full p-3 border rounded-lg" placeholder="Message"></textarea>
-    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary">Send Message</button>
-    
-  </form>
+<section id="contact" class="max-w-5xl mx-auto px-4 py-10">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6">Contact Us</h2>
 
- 
-   <!-- Contact Details -->
-    <div class="bg-white p-6 rounded-2xl shadow">
-      <h3 class="text-xl font-semibold text-primary mb-4">Get in Touch</h3>
-      
-      <div class="space-y-4 text-gray-700">
-        <div>
-          <p class="font-medium">📧 Email</p>
-          <p>omfoodproduct25@gmail.com</p>
-        </div>
+  <div class="grid md:grid-cols-2 gap-6">
 
-        <div>
-          <p class="font-medium">📍 Address</p>
-          <p>Om Food Products<br/>Sikandrabad  Uttar Pradesh, India <br> Pin Code : 203205</p>
-        </div>
+    <!-- FORM -->
+    <form class="space-y-3">
+      <input class="w-full p-3 border rounded-lg" placeholder="Name" />
+      <input class="w-full p-3 border rounded-lg" placeholder="Email" />
+      <textarea class="w-full p-3 border rounded-lg" placeholder="Message"></textarea>
+      <button class="bg-primary text-white px-6 py-3 rounded-lg w-full">Send Message</button>
+    </form>
 
-        <div>
-          <p class="font-medium">📞 Phone</p>
-          <p>+91 7060550170</p>
-        </div>
-      </div>
+    <!-- DETAILS -->
+    <div class="bg-white p-5 rounded-2xl shadow">
+      <p><strong>Email:</strong> omfoodproduct25@gmail.com</p>
+      <p class="mt-2"><strong>Address:</strong> Sikandrabad, Uttar Pradesh (203205)</p>
+      <p class="mt-2"><strong>Phone:</strong> +91 7060550170</p>
     </div>
-  </div>
 
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-300 text-center py-6">
-  <p>© 2025 Om Food Products. All rights reserved.</p>
+<footer class="bg-gray-900 text-gray-300 text-center py-5 text-sm">
+  © 2025 Om Food Products
 </footer>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
