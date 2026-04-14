@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Food Products</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8B5E3C',
+            secondary: '#2E7D32',
+            accent: '#F59E0B',
+            bgsoft: '#FFF8F0'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-bgsoft text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white/80 backdrop-blur shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="text-xl font-bold text-primary">Om Food Products</div>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#" class="hover:text-primary">Home</a>
+      <a href="#products" class="hover:text-primary">Products</a>
+      <a href="#about" class="hover:text-primary">About</a>
+      <a href="#contact" class="hover:text-primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center py-16 px-4">
+  <div data-aos="fade-right">
+    <h1 class="text-5xl font-bold text-primary mb-4">Pure & Fresh
+      <span class="text-secondary">Wheat Products</span>
+    </h1>
+    <p class="mb-6 text-gray-600">High-quality packaged atta with trusted processing and hygiene standards. Built for families, retailers, and bulk buyers.</p>
+    <div class="space-x-4">
+      <a href="#products" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition">Explore Products</a>
+      <a href="#contact" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition">Contact Us</a>
+    </div>
+  </div>
+  <div data-aos="fade-left">
+    <img src="photos\rasoi.jpg" alt="Fresh wheat products in a bowl" class="rounded-2xl shadow-lg" />
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 px-4 py-12">
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-semibold text-primary mb-2">Premium Quality</h3>
+    <p class="text-sm text-gray-600">Finest grains selected and processed with care.</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-semibold text-primary mb-2">Lab Tested</h3>
+    <p class="text-sm text-gray-600">Strict quality control and certified safety standards.</p>
+  </div>
+  <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="font-semibold text-primary mb-2">Reliable Supply</h3>
+    <p class="text-sm text-gray-600">Consistent availability for retailers and distributors.</p>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="max-w-7xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold text-primary mb-8">Our Products</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
+      <img src="photos/rasoiatta.jpg" alt="Rasoi Chakki Fresh Atta" class="rounded mb-4" />
+      <h3 class="font-semibold text-lg">Rasoi Chakki Fresh Atta</h3>
+      <p class="text-sm text-gray-600">100% Whole Wheat • 5Kg | 10Kg</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-2xl shadow hover:shadow-xl transition">
+      <img src="photos/newasthabhog.jpg" alt="Premium Quality Atta" class="rounded mb-4" />
+      <h3 class="font-semibold text-lg">Premium Quality Atta</h3>
+      <p class="text-sm text-gray-600">5Kg | 10Kg | 50Kg</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-white py-12">
+  <div class="max-w-5xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-primary mb-4">About Us</h2>
+    <p class="text-gray-600">Om Food Products delivers premium packaged wheat products with advanced manufacturing, hygiene, and traceability systems ensuring top-notch quality.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary text-white text-center py-12">
+  <h2 class="text-3xl font-bold mb-4">Looking for Bulk Orders?</h2>
+  <p class="mb-6">We supply to retailers, wholesalers, and distributors.</p>
+  <a href="#contact" class="bg-accent px-6 py-3 rounded-lg hover:scale-105 transition">Get in Touch</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-5xl mx-auto px-4 py-12">
+  <h2 class="text-3xl font-bold text-primary mb-6">Contact Us</h2>
+  <form class="space-y-4">
+    <input class="w-full p-3 border rounded-lg" placeholder="Name" />
+    <input class="w-full p-3 border rounded-lg" placeholder="Email" />
+    <textarea class="w-full p-3 border rounded-lg" placeholder="Message"></textarea>
+    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary">Send Message</button>
+    
+  </form>
+   <!-- Contact Details -->
+    <div class="bg-white p-6 rounded-2xl shadow">
+      <h3 class="text-xl font-semibold text-primary mb-4">Get in Touch</h3>
+      
+      <div class="space-y-4 text-gray-700">
+        <div>
+          <p class="font-medium">📧 Email</p>
+          <p>omfoodproduct25@gmail.com</p>
+        </div>
+
+        <div>
+          <p class="font-medium">📍 Address</p>
+          <p>Om Food Products<br/>Sikandrabad  Uttar Pradesh, India <br> Pin Code : 203205</p>
+        </div>
+
+        <div>
+          <p class="font-medium">📞 Phone</p>
+          <p>+91 7060550170</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-300 text-center py-6">
+  <p>© 2025 Om Food Products. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
